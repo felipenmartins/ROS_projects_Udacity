@@ -8,20 +8,20 @@ This reporsitory contains the files and code I am preparing to fulfill the requi
 ## Projects
 The Robotics Software Engineer nanodegree is organized in 6 courses and 5 projects. The projects are briefly explained below (as of March 2021).
 
-### Project 1. Build My World
+### [Project 1. Build My World](/Project_1)
 Use Gazebo to simulate a robotic environment comprised of a building to house your future robot. 
 
-### Project 2. Go Chase It!
+### [Project 2. Go Chase It!](/Project_2)
 Use ROS, C++, and Gazebo to build and program a ball-chasing robot. It consists of designing a robot inside Gazebo, house it in a world you have to build, 
 and code a C++ node in ROS to chase a white ball.
 
-### Project 3. Where Am I?
+### [Project 3. Where Am I?](/Project_3)
 Apply the Adaptive Monte Carlo Localization algorithm in ROS to estimate your robot’s position as it travels through a predefined set of waypoints. 
 
-### Project 4. Map My World
+### [Project 4. Map My World](/Project_4)
 Interface your robot with an RTAB Map ROS package to localize it and build 2D and 3D maps of their environment. 
 
-### Project 5. Home Service Robot
+### [Project 5. Home Service Robot](/Project_5)
 Combine everything you’ve learned in this program to simulate a home service robot that can map, localize, and navigate to transport objects, moving from one room to another autonomously. 
 
 ## Requirements
