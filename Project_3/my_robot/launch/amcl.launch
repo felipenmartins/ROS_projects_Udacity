@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- Map Server -->
+    <arg name="map_file" default="$(find my_robot)/maps/map.yaml"/>
+    <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+    <!-- AMCL node -->
+    <node name="amcl" pkg="amcl" type="amcl" output="screen">
+        <!-- Originally it was remapping to "my_robot/laser/scan" -->
+        <remap from="scan" to="/scan"/>
+        <param name="odom_frame_id" value="odom"/>
+        <param name="odom_model_type" value="diff-corrected"/>
+        <param name="base_frame_id" value="robot_footprint"/>
+        <param name="gobal_frame_id" value="map"/>
+        <param name="initial_pose_x" value="0.0"/>
+        <param name="initial_pose_y" value="0.0"/>
+        <param name="min_particles" value="100"/>
+        <param name="max_particles" value="2000"/>
+	<param name="laser_model_type" value="likelihood_field"/>
+	<param name="laser_max_beams" value="50"/>
+	<param name="odom_model_type" value="diff-corrected"/>
+	<param name="base_frame_id" value="robot_footprint"/>
+
+    </node>
+
+    <!-- Move Base -->
+    <node name="move_base" pkg="move_base" type="move_base" respawn="false" output="screen">
+        <!-- Originally it was remapping to "my_robot/laser/scan" -->
+        <remap from="scan" to="/scan"/>
+        <param name="base_global_planner" value="navfn/NavfnROS"/>
+        <param name="base_local_planner" value="base_local_planner/TrajectoryPlannerROS"/>
+        <rosparam file="$(find my_robot)/config/costmap_common_params.yaml" command="load" ns="global_costmap" />
+        <rosparam file="$(find my_robot)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
+        <rosparam file="$(find my_robot)/config/local_costmap_params.yaml" command="load" />
+        <rosparam file="$(find my_robot)/config/global_costmap_params.yaml" command="load" />
+        <rosparam file="$(find my_robot)/config/base_local_planner_params.yaml" command="load" />
+    </node>
+
+</launch>
