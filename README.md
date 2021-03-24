@@ -22,6 +22,8 @@ and code a C++ node in ROS to chase a white ball.
 ### [Project 3. Where Am I?](/Project_3)
 Apply the Adaptive Monte Carlo Localization algorithm in ROS to estimate your robot’s position as it travels through a predefined set of waypoints. 
 
+![Screenshot_AMCL](Project_3/screenshots/screenshot5.png)
+
 ### [Project 4. Map My World](/Project_4)
 Interface your robot with an RTAB Map ROS package to localize it and build 2D and 3D maps of their environment. 
 
