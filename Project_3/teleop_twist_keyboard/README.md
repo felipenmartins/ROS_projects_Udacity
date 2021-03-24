@@ -1,6 +1,8 @@
 # teleop_twist_keyboard
 Generic Keyboard Teleop for ROS
 
+**Original repository is available [here](https://github.com/ros-teleop/teleop_twist_keyboard)**
+
 # Launch
 Run.
 ```
