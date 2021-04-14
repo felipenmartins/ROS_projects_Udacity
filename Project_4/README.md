@@ -2,7 +2,7 @@
 Interface your robot with an RTAB Map ROS package to localize it and build 2D and 3D maps of their environment. 
 
 ## Generated db files
-The generated db files are in the folder '/catkin_ws/src/my_robot/db_files'.
+The generated db files can be downloaded [from here](https://drive.google.com/drive/folders/13x1oxjpjZQpvl7NnLVNQHOJxgDwQUb9A?usp=sharing).
 
 ## Mapping process
 The following screenshots show the mapping process and the final result. In the first three screens, RViz and Gazebo are shown side-by-side during the mapping process, while the robot is driven via teleop node.
