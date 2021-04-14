@@ -27,6 +27,8 @@ Apply the Adaptive Monte Carlo Localization algorithm in ROS to estimate your ro
 ### [Project 4. Map My World](/Project_4)
 Interface your robot with an RTAB Map ROS package to localize it and build 2D and 3D maps of their environment. 
 
+![Screenshot RTAB SLAM](Project_4/screenshots/viz_and_gazebo_3.png)
+
 ### [Project 5. Home Service Robot](/Project_5)
 Combine everything you’ve learned in this program to simulate a home service robot that can map, localize, and navigate to transport objects, moving from one room to another autonomously. 
 
