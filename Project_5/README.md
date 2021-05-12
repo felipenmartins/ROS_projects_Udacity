@@ -63,7 +63,7 @@ The image below shows a screenshot of the execution of the `test_slam.sh` script
 To test navigation, run the script `test_navigation.sh`. It will call the launch files to open Gazebo, load the environment with a Turtlebot in it, run the AMCL to localize the robot and open RViz with a visualization of the map. On RViz, click the button `2D Nav Goal` and select a pose in the map. You will see the path planned and the robot should move to the goal.
 ```
 $ cd ~/catkin_ws/src/scripts
-$ ./test_slam.sh
+$ ./test_navigation.sh
 ```
 The image below shows a screenshot of the execution of the `test_navigation.sh` script when the robot is following the plan to go to the goal pose. The green line on RViz screen is the path to be followed by the robot. 
 
