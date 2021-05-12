@@ -65,6 +65,10 @@ To test navigation, run the script `test_navigation.sh`. It will call the launch
 $ cd ~/catkin_ws/src/scripts
 $ ./test_navigation.sh
 ```
+The image below shows a screenshot of the execution of the `test_navigation.sh` script when the robot is first localized by the AMCL (see the particles around your robot).  
+
+![fig_navigation_testing_1](screenshots/navigating_to_goal_pose_1.png)
+
 The image below shows a screenshot of the execution of the `test_navigation.sh` script when the robot is following the plan to go to the goal pose. The green line on RViz screen is the path to be followed by the robot. 
 
-![fig_navigation_testing](screenshots/navigating_to_goal_pose_2.png)
+![fig_navigation_testing_2](screenshots/navigating_to_goal_pose_2.png)
