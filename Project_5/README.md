@@ -86,3 +86,15 @@ The image below shows a screenshot of the execution of the `pick_objects.sh` scr
 The next screenshot shows the robot after it gets to the second target.
 
 ![fig_pick_objects2](screenshots/screenshot_pick_objects_3.png)
+
+### Virtual Objects
+The script `add_markers.sh` runs the launch files to open Gazebo with Turtlebot, the AMCL, RViz with a visualization of the map and the node `add_markers`, which adds a visualization of a cube at the pickup and the drop off positions in RViz. Run the script to see the cubes changing from the pickup to the drop off positions: 
+```
+$ cd ~/catkin_ws/src/scripts
+$ ./add_markers.sh
+```
+The image below shows a screenshot of the execution of the `add_markers.sh`. The first image shows the block at pickup position, and the second shows the block at dropoff position.  
+
+![fig_add_markers1](screenshots/screenshot_add_markers_1.png)
+
+![fig_add_markers2](screenshots/screenshot_add_markers_2.png)
