@@ -72,3 +72,17 @@ The image below shows a screenshot of the execution of the `test_navigation.sh` 
 The image below shows a screenshot of the execution of the `test_navigation.sh` script when the robot is following the plan to go to the goal pose. The green line on RViz screen is the path to be followed by the robot. 
 
 ![fig_navigation_testing_2](screenshots/navigating_to_goal_pose_2.png)
+
+### Reaching Multiple Goals
+The script `pick_objects.sh` runs the launch files to open Gazebo with Turtlebot, the AMCL, RViz with a visualization of the map and the node `pick_objects`, which sends two different targets for the robot to reach in sequence. Run the script to see the robot moving autonomously to the two specified target poses: 
+```
+$ cd ~/catkin_ws/src/scripts
+$ ./pick_objects.sh
+```
+The image below shows a screenshot of the execution of the `pick_objects.sh` script when the robot is at the first target and it already received the plan to move to the second target. The messages on the terminal screen show the sequence of events.  
+
+![fig_pick_objects](screenshots/screenshot_pick_objects_2.png)
+
+The next screenshot shows the robot after it gets to the second target.
+
+![fig_pick_objects2](screenshots/screenshot_pick_objects_3.png)
