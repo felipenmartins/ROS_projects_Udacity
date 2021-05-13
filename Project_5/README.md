@@ -98,3 +98,19 @@ The image below shows a screenshot of the execution of the `add_markers.sh`. The
 ![fig_add_markers1](screenshots/screenshot_add_markers_1.png)
 
 ![fig_add_markers2](screenshots/screenshot_add_markers_2.png)
+
+### Home Service Robot
+Putting it all together, the **home service robot** will automatically execute a task of picking a virtual object in a pre-specified position and transport it to another pre-specified position. The script `home_service.sh` runs the launch files to open Gazebo with Turtlebot, the AMCL, RViz with a visualization of the map, the node `add_markers` (responsible for adding and removing the virtual objects) and the node pick_objects to send the goal positions. 
+```
+$ cd ~/catkin_ws/src/scripts
+$ ./home_service.sh
+```
+The screenshots below illustrate the execution of the Home Service Robot. In the first screen the robot is moving towards the object, to pick it up./ In the second screen, the robot is transporting the object to the drop off position. In the third screen, the robot is at the drop off position and the virtual object has been already placed there. 
+
+![fig_home_service_1](screenshots/screenshot_home_service_1.png)
+
+![fig_home_service_2](screenshots/screenshot_home_service_2.png)
+
+![fig_home_service_3](screenshots/screenshot_home_service_3.png)
+
+
