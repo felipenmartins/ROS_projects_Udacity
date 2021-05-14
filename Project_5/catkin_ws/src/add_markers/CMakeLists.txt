@@ -135,6 +135,7 @@ include_directories(
 # add_executable(${PROJECT_NAME}_node src/add_markers_node.cpp)
 
 add_executable(add_markers src/add_markers.cpp)
+add_executable(add_markers_5s src/add_markers_5s.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -148,6 +149,10 @@ add_executable(add_markers src/add_markers.cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(add_markers  ##${PROJECT_NAME}_node
+  ${catkin_LIBRARIES}
+)
+
+target_link_libraries(add_markers_5s  ##${PROJECT_NAME}_node
   ${catkin_LIBRARIES}
 )
 
