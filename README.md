@@ -3,7 +3,7 @@ Projects from Udacity's [Robotics Software Engineer nanodegree](https://www.udac
 
 This program is a collection of courses and practical projects to programming robots using the ROS framework and C++ to build and apply algorithms for localization, mapping, and navigation in the context of mobile robots. 
 
-This reporsitory contains the files and code I am preparing to fulfill the requirements of the projects.
+This reporsitory contains the files and code that I prepared to fulfill the requirements of the projects.
 
 ## Projects
 The Robotics Software Engineer nanodegree is organized in 6 courses and 5 projects. The projects are briefly explained below (as of March 2021).
@@ -30,7 +30,9 @@ Interface your robot with an RTAB Map ROS package to localize it and build 2D an
 ![Screenshot RTAB SLAM](Project_4/screenshots/viz_and_gazebo_3.png)
 
 ### [Project 5. Home Service Robot](/Project_5)
-Combine everything you’ve learned in this program to simulate a home service robot that can map, localize, and navigate to transport objects, moving from one room to another autonomously. 
+Simulate a home service robot that can map, localize, and navigate to transport virtual objects, moving from one room to another autonomously. 
+
+![Screenshot_home_service](Project_5/screenshots/screenshot_home_service_4.png)
 
 ## Requirements
 To run the code from this repository you will need to use [ROS Kinetic](http://wiki.ros.org/kinetic).
